@@ -1,0 +1,1172 @@
+{
+  "title": {
+    "ne": "नेपाल राज्य उत्तरखण्डे\nगण्डकी प्रदेश, स्याङ्जा जिल्ला, वालिङ नगरपालिका वडा नं. ०१ मनसाङ्गकोट\nशर्वाणि गोत्रे काफ्ले बन्धुको वंशावली",
+    "en": "Nepal — Uttarkhanda\nGandaki Pradesh, Syangja District, Waling Municipality Ward No. 01, Mansangkot\nGenealogy of the Sharvani-gotra Kafle Brethren"
+  },
+  "default_surname": "काफ्ले",
+  "default_surname_en": "Kafle",
+  "root_id": "p000",
+  "people": {
+    "p000": {
+      "id": "p000",
+      "name": "दामोदर उपाध्याय",
+      "parent_id": null,
+      "children_ids": [
+        "p002",
+        "p001"
+      ]
+    },
+    "p001": {
+      "id": "p001",
+      "name": "वसन्त",
+      "parent_id": "p000",
+      "children_ids": [
+        "p003",
+        "p004"
+      ]
+    },
+    "p002": {
+      "id": "p002",
+      "name": "द्वारिका",
+      "parent_id": "p000",
+      "children_ids": [
+        "p005"
+      ]
+    },
+    "p003": {
+      "id": "p003",
+      "name": "हिरामणि",
+      "parent_id": "p001",
+      "children_ids": [
+        "p006"
+      ]
+    },
+    "p004": {
+      "id": "p004",
+      "name": "वृहस्पति",
+      "parent_id": "p001",
+      "children_ids": [
+        "p010",
+        "p008",
+        "p007",
+        "p009"
+      ]
+    },
+    "p005": {
+      "id": "p005",
+      "name": "चिन्तामणि",
+      "parent_id": "p002",
+      "children_ids": [
+        "p012",
+        "p011"
+      ]
+    },
+    "p006": {
+      "id": "p006",
+      "name": "छविलाल",
+      "parent_id": "p003",
+      "children_ids": [
+        "p013",
+        "p015",
+        "p014"
+      ]
+    },
+    "p007": {
+      "id": "p007",
+      "name": "श्रीकृष्ण",
+      "parent_id": "p004",
+      "children_ids": [
+        "p016"
+      ]
+    },
+    "p008": {
+      "id": "p008",
+      "name": "शक्तिवल्लभ",
+      "parent_id": "p004",
+      "children_ids": [
+        "p017",
+        "p018"
+      ]
+    },
+    "p009": {
+      "id": "p009",
+      "name": "दामोदर",
+      "parent_id": "p004",
+      "children_ids": [
+        "p019"
+      ]
+    },
+    "p010": {
+      "id": "p010",
+      "name": "जयपति",
+      "parent_id": "p004",
+      "children_ids": [
+        "p020"
+      ]
+    },
+    "p011": {
+      "id": "p011",
+      "name": "कान्छा",
+      "parent_id": "p005",
+      "children_ids": []
+    },
+    "p012": {
+      "id": "p012",
+      "name": "भिमलाल",
+      "parent_id": "p005",
+      "children_ids": [
+        "p023",
+        "p021",
+        "p024",
+        "p022"
+      ]
+    },
+    "p013": {
+      "id": "p013",
+      "name": "ढुन्डिराम",
+      "parent_id": "p006",
+      "children_ids": [
+        "p025",
+        "p026"
+      ]
+    },
+    "p014": {
+      "id": "p014",
+      "name": "नन्दलाल",
+      "parent_id": "p006",
+      "children_ids": []
+    },
+    "p015": {
+      "id": "p015",
+      "name": "केशव",
+      "parent_id": "p006",
+      "children_ids": []
+    },
+    "p016": {
+      "id": "p016",
+      "name": "तेजनारायण",
+      "parent_id": "p007",
+      "children_ids": [
+        "p029",
+        "p030",
+        "p027",
+        "p028",
+        "p031"
+      ]
+    },
+    "p017": {
+      "id": "p017",
+      "name": "बालकृष्ण",
+      "parent_id": "p008",
+      "children_ids": [
+        "p032",
+        "p035",
+        "p034",
+        "p033",
+        "p036"
+      ]
+    },
+    "p018": {
+      "id": "p018",
+      "name": "चोलाकान्त",
+      "parent_id": "p008",
+      "children_ids": [
+        "p039",
+        "p038",
+        "p037"
+      ]
+    },
+    "p019": {
+      "id": "p019",
+      "name": "हिमलाल",
+      "parent_id": "p009",
+      "children_ids": [
+        "p041",
+        "p040"
+      ]
+    },
+    "p020": {
+      "id": "p020",
+      "name": "जयवल्लभ",
+      "parent_id": "p010",
+      "children_ids": [
+        "p043",
+        "p042",
+        "p044"
+      ]
+    },
+    "p021": {
+      "id": "p021",
+      "name": "डासिराज",
+      "parent_id": "p012",
+      "children_ids": []
+    },
+    "p022": {
+      "id": "p022",
+      "name": "बालकृष्ण",
+      "parent_id": "p012",
+      "children_ids": [
+        "p046",
+        "p045",
+        "p047"
+      ]
+    },
+    "p023": {
+      "id": "p023",
+      "name": "दुर्गादाश",
+      "parent_id": "p012",
+      "children_ids": [
+        "p049",
+        "p051",
+        "p050",
+        "p048"
+      ]
+    },
+    "p024": {
+      "id": "p024",
+      "name": "एकदेव",
+      "parent_id": "p012",
+      "children_ids": []
+    },
+    "p025": {
+      "id": "p025",
+      "name": "हुमकान्त",
+      "parent_id": "p013",
+      "children_ids": [
+        "p052",
+        "p054",
+        "p053",
+        "p055"
+      ]
+    },
+    "p026": {
+      "id": "p026",
+      "name": "लिलावल्लभ",
+      "parent_id": "p013",
+      "children_ids": [
+        "p061",
+        "p059",
+        "p056",
+        "p060",
+        "p057",
+        "p058"
+      ]
+    },
+    "p027": {
+      "id": "p027",
+      "name": "रेस्मीराज",
+      "parent_id": "p016",
+      "children_ids": [
+        "p067",
+        "p064",
+        "p066",
+        "p065",
+        "p062",
+        "p063"
+      ]
+    },
+    "p028": {
+      "id": "p028",
+      "name": "विश्वप्रेम",
+      "parent_id": "p016",
+      "children_ids": [
+        "p068"
+      ]
+    },
+    "p029": {
+      "id": "p029",
+      "name": "रत्नाकर",
+      "parent_id": "p016",
+      "children_ids": [
+        "p069"
+      ]
+    },
+    "p030": {
+      "id": "p030",
+      "name": "काशिराम",
+      "parent_id": "p016",
+      "children_ids": []
+    },
+    "p031": {
+      "id": "p031",
+      "name": "डासीराम",
+      "parent_id": "p016",
+      "children_ids": [
+        "p071",
+        "p070",
+        "p072"
+      ]
+    },
+    "p032": {
+      "id": "p032",
+      "name": "महेश्वर",
+      "parent_id": "p017",
+      "children_ids": [
+        "p074",
+        "p073"
+      ]
+    },
+    "p033": {
+      "id": "p033",
+      "name": "भरत",
+      "parent_id": "p017",
+      "children_ids": [
+        "p075"
+      ]
+    },
+    "p034": {
+      "id": "p034",
+      "name": "लक्ष्मण",
+      "parent_id": "p017",
+      "children_ids": [
+        "p076"
+      ]
+    },
+    "p035": {
+      "id": "p035",
+      "name": "पर्शुराम",
+      "parent_id": "p017",
+      "children_ids": [
+        "p077",
+        "p078"
+      ]
+    },
+    "p036": {
+      "id": "p036",
+      "name": "रामु",
+      "parent_id": "p017",
+      "children_ids": []
+    },
+    "p037": {
+      "id": "p037",
+      "name": "कोपिल",
+      "parent_id": "p018",
+      "children_ids": []
+    },
+    "p038": {
+      "id": "p038",
+      "name": "इश्वर",
+      "parent_id": "p018",
+      "children_ids": [
+        "p079"
+      ]
+    },
+    "p039": {
+      "id": "p039",
+      "name": "भगवान",
+      "parent_id": "p018",
+      "children_ids": [
+        "p080"
+      ]
+    },
+    "p040": {
+      "id": "p040",
+      "name": "रेशमबहादुर",
+      "parent_id": "p019",
+      "children_ids": [
+        "p082",
+        "p081"
+      ]
+    },
+    "p041": {
+      "id": "p041",
+      "name": "खेमबहादुर",
+      "parent_id": "p019",
+      "children_ids": [
+        "p085",
+        "p084",
+        "p083"
+      ]
+    },
+    "p042": {
+      "id": "p042",
+      "name": "चुरामणि",
+      "parent_id": "p020",
+      "children_ids": [
+        "p086",
+        "p087"
+      ]
+    },
+    "p043": {
+      "id": "p043",
+      "name": "खेमनारायण",
+      "parent_id": "p020",
+      "children_ids": [
+        "p088"
+      ]
+    },
+    "p044": {
+      "id": "p044",
+      "name": "हिमलाल",
+      "parent_id": "p020",
+      "children_ids": [
+        "p089"
+      ]
+    },
+    "p045": {
+      "id": "p045",
+      "name": "कृष्ण",
+      "parent_id": "p022",
+      "children_ids": [
+        "p090",
+        "p091"
+      ]
+    },
+    "p046": {
+      "id": "p046",
+      "name": "अमृत",
+      "parent_id": "p022",
+      "children_ids": [
+        "p093",
+        "p092"
+      ]
+    },
+    "p047": {
+      "id": "p047",
+      "name": "नारायण",
+      "parent_id": "p022",
+      "children_ids": [
+        "p095",
+        "p094"
+      ]
+    },
+    "p048": {
+      "id": "p048",
+      "name": "गङ्गाराम",
+      "parent_id": "p023",
+      "children_ids": [
+        "p096"
+      ]
+    },
+    "p049": {
+      "id": "p049",
+      "name": "भोजराज",
+      "parent_id": "p023",
+      "children_ids": []
+    },
+    "p050": {
+      "id": "p050",
+      "name": "णप्रसाद (वेपत्ता)",
+      "parent_id": "p023",
+      "children_ids": []
+    },
+    "p051": {
+      "id": "p051",
+      "name": "चुरामणी",
+      "parent_id": "p023",
+      "children_ids": [
+        "p100",
+        "p099",
+        "p098",
+        "p097"
+      ]
+    },
+    "p052": {
+      "id": "p052",
+      "name": "बाबुराम",
+      "parent_id": "p025",
+      "children_ids": [
+        "p102",
+        "p103",
+        "p105",
+        "p104",
+        "p101"
+      ]
+    },
+    "p053": {
+      "id": "p053",
+      "name": "गोपीकृष्ण",
+      "parent_id": "p025",
+      "children_ids": [
+        "p108",
+        "p106",
+        "p107"
+      ]
+    },
+    "p054": {
+      "id": "p054",
+      "name": "एकनारायण",
+      "parent_id": "p025",
+      "children_ids": [
+        "p109",
+        "p110",
+        "p111"
+      ]
+    },
+    "p055": {
+      "id": "p055",
+      "name": "दिर्घनारायण",
+      "parent_id": "p025",
+      "children_ids": [
+        "p112"
+      ]
+    },
+    "p056": {
+      "id": "p056",
+      "name": "कृष्ण",
+      "parent_id": "p026",
+      "children_ids": [
+        "p114",
+        "p113"
+      ]
+    },
+    "p057": {
+      "id": "p057",
+      "name": "बालकृष्ण",
+      "parent_id": "p026",
+      "children_ids": [
+        "p115"
+      ]
+    },
+    "p058": {
+      "id": "p058",
+      "name": "ज्योति",
+      "parent_id": "p026",
+      "children_ids": [
+        "p116"
+      ]
+    },
+    "p059": {
+      "id": "p059",
+      "name": "डिल्लीराम",
+      "parent_id": "p026",
+      "children_ids": [
+        "p117"
+      ]
+    },
+    "p060": {
+      "id": "p060",
+      "name": "गोपाल",
+      "parent_id": "p026",
+      "children_ids": [
+        "p118"
+      ]
+    },
+    "p061": {
+      "id": "p061",
+      "name": "अशोक, चोलाकान्त",
+      "parent_id": "p026",
+      "children_ids": [
+        "p121",
+        "p119",
+        "p120"
+      ],
+      "multi_names": true
+    },
+    "p062": {
+      "id": "p062",
+      "name": "भुवन",
+      "parent_id": "p027",
+      "children_ids": []
+    },
+    "p063": {
+      "id": "p063",
+      "name": "नमराज",
+      "parent_id": "p027",
+      "children_ids": []
+    },
+    "p064": {
+      "id": "p064",
+      "name": "आनन्द",
+      "parent_id": "p027",
+      "children_ids": [
+        "p122"
+      ]
+    },
+    "p065": {
+      "id": "p065",
+      "name": "मनोज, मुनिराज",
+      "parent_id": "p027",
+      "children_ids": [
+        "p123"
+      ],
+      "multi_names": true
+    },
+    "p066": {
+      "id": "p066",
+      "name": "लोकनाथ",
+      "parent_id": "p027",
+      "children_ids": []
+    },
+    "p067": {
+      "id": "p067",
+      "name": "गोविन्द",
+      "parent_id": "p027",
+      "children_ids": [
+        "p124"
+      ]
+    },
+    "p068": {
+      "id": "p068",
+      "name": "दिपक",
+      "parent_id": "p028",
+      "children_ids": [
+        "p125"
+      ]
+    },
+    "p069": {
+      "id": "p069",
+      "name": "हुमलाल",
+      "parent_id": "p029",
+      "children_ids": [
+        "p126"
+      ]
+    },
+    "p070": {
+      "id": "p070",
+      "name": "कमल, वेतप्रसाद",
+      "parent_id": "p031",
+      "children_ids": [
+        "p127"
+      ],
+      "multi_names": true
+    },
+    "p071": {
+      "id": "p071",
+      "name": "रामु, हुमकान्त",
+      "parent_id": "p031",
+      "children_ids": [
+        "p128"
+      ],
+      "multi_names": true
+    },
+    "p072": {
+      "id": "p072",
+      "name": "प्रविन, शिव",
+      "parent_id": "p031",
+      "children_ids": [],
+      "multi_names": true
+    },
+    "p073": {
+      "id": "p073",
+      "name": "नवराज",
+      "parent_id": "p032",
+      "children_ids": []
+    },
+    "p074": {
+      "id": "p074",
+      "name": "अमृत",
+      "parent_id": "p032",
+      "children_ids": []
+    },
+    "p075": {
+      "id": "p075",
+      "name": "विपन",
+      "parent_id": "p033",
+      "children_ids": []
+    },
+    "p076": {
+      "id": "p076",
+      "name": "आरूस",
+      "parent_id": "p034",
+      "children_ids": []
+    },
+    "p077": {
+      "id": "p077",
+      "name": "प्रशन्न",
+      "parent_id": "p035",
+      "children_ids": []
+    },
+    "p078": {
+      "id": "p078",
+      "name": "प्रशान्त",
+      "parent_id": "p035",
+      "children_ids": []
+    },
+    "p079": {
+      "id": "p079",
+      "name": "जगदिश",
+      "parent_id": "p038",
+      "children_ids": []
+    },
+    "p080": {
+      "id": "p080",
+      "name": "सुजन",
+      "parent_id": "p039",
+      "children_ids": []
+    },
+    "p081": {
+      "id": "p081",
+      "name": "गणेश",
+      "parent_id": "p040",
+      "children_ids": []
+    },
+    "p082": {
+      "id": "p082",
+      "name": "कृष्ण",
+      "parent_id": "p040",
+      "children_ids": [
+        "p129"
+      ]
+    },
+    "p083": {
+      "id": "p083",
+      "name": "थानेश्वर",
+      "parent_id": "p041",
+      "children_ids": []
+    },
+    "p084": {
+      "id": "p084",
+      "name": "विष्णु",
+      "parent_id": "p041",
+      "children_ids": [
+        "p130"
+      ]
+    },
+    "p085": {
+      "id": "p085",
+      "name": "किष्ण",
+      "parent_id": "p041",
+      "children_ids": [
+        "p131"
+      ]
+    },
+    "p086": {
+      "id": "p086",
+      "name": "गंगा",
+      "parent_id": "p042",
+      "children_ids": []
+    },
+    "p087": {
+      "id": "p087",
+      "name": "भगवान",
+      "parent_id": "p042",
+      "children_ids": []
+    },
+    "p088": {
+      "id": "p088",
+      "name": "कृष्ण",
+      "parent_id": "p043",
+      "children_ids": []
+    },
+    "p089": {
+      "id": "p089",
+      "name": "लक्ष्मण",
+      "parent_id": "p044",
+      "children_ids": []
+    },
+    "p090": {
+      "id": "p090",
+      "name": "दिपक",
+      "parent_id": "p045",
+      "children_ids": []
+    },
+    "p091": {
+      "id": "p091",
+      "name": "सन्तोष",
+      "parent_id": "p045",
+      "children_ids": []
+    },
+    "p092": {
+      "id": "p092",
+      "name": "कान्छा",
+      "parent_id": "p046",
+      "children_ids": []
+    },
+    "p093": {
+      "id": "p093",
+      "name": "मनोज",
+      "parent_id": "p046",
+      "children_ids": []
+    },
+    "p094": {
+      "id": "p094",
+      "name": "उपेन्द्र",
+      "parent_id": "p047",
+      "children_ids": []
+    },
+    "p095": {
+      "id": "p095",
+      "name": "मुकेश",
+      "parent_id": "p047",
+      "children_ids": [
+        "p132"
+      ]
+    },
+    "p096": {
+      "id": "p096",
+      "name": "साधुराम",
+      "parent_id": "p048",
+      "children_ids": []
+    },
+    "p097": {
+      "id": "p097",
+      "name": "सुजनउत्तम",
+      "parent_id": "p051",
+      "children_ids": [
+        "p134",
+        "p133"
+      ]
+    },
+    "p098": {
+      "id": "p098",
+      "name": "जनक",
+      "parent_id": "p051",
+      "children_ids": [
+        "p135"
+      ]
+    },
+    "p099": {
+      "id": "p099",
+      "name": "उत्तम",
+      "parent_id": "p051",
+      "children_ids": [
+        "p137",
+        "p136"
+      ]
+    },
+    "p100": {
+      "id": "p100",
+      "name": "पूर्षोत्तम",
+      "parent_id": "p051",
+      "children_ids": [
+        "p138",
+        "p139"
+      ]
+    },
+    "p101": {
+      "id": "p101",
+      "name": "धुर्व",
+      "parent_id": "p052",
+      "children_ids": [
+        "p140"
+      ]
+    },
+    "p102": {
+      "id": "p102",
+      "name": "डिलराज",
+      "parent_id": "p052",
+      "children_ids": [
+        "p141",
+        "p142"
+      ]
+    },
+    "p103": {
+      "id": "p103",
+      "name": "बोधराज",
+      "parent_id": "p052",
+      "children_ids": []
+    },
+    "p104": {
+      "id": "p104",
+      "name": "निलकण्ठ",
+      "parent_id": "p052",
+      "children_ids": [
+        "p143"
+      ]
+    },
+    "p105": {
+      "id": "p105",
+      "name": "हुमकान्त",
+      "parent_id": "p052",
+      "children_ids": [
+        "p144"
+      ]
+    },
+    "p106": {
+      "id": "p106",
+      "name": "तुलसी, कमल",
+      "parent_id": "p053",
+      "children_ids": [],
+      "multi_names": true
+    },
+    "p107": {
+      "id": "p107",
+      "name": "हिरा",
+      "parent_id": "p053",
+      "children_ids": []
+    },
+    "p108": {
+      "id": "p108",
+      "name": "दिनेश",
+      "parent_id": "p053",
+      "children_ids": []
+    },
+    "p109": {
+      "id": "p109",
+      "name": "अर्जुन, इश्वरीप्रसाद",
+      "parent_id": "p054",
+      "children_ids": [
+        "p145"
+      ],
+      "multi_names": true
+    },
+    "p110": {
+      "id": "p110",
+      "name": "शोभाकान्त",
+      "parent_id": "p054",
+      "children_ids": [
+        "p146",
+        "p147"
+      ]
+    },
+    "p111": {
+      "id": "p111",
+      "name": "तुलसीराम",
+      "parent_id": "p054",
+      "children_ids": [
+        "p149",
+        "p148"
+      ]
+    },
+    "p112": {
+      "id": "p112",
+      "name": "सुनिल, मुकुन्द",
+      "parent_id": "p055",
+      "children_ids": [],
+      "multi_names": true
+    },
+    "p113": {
+      "id": "p113",
+      "name": "हरी",
+      "parent_id": "p056",
+      "children_ids": []
+    },
+    "p114": {
+      "id": "p114",
+      "name": "सुमन",
+      "parent_id": "p056",
+      "children_ids": []
+    },
+    "p115": {
+      "id": "p115",
+      "name": "सागर",
+      "parent_id": "p057",
+      "children_ids": []
+    },
+    "p116": {
+      "id": "p116",
+      "name": "सन्दिप",
+      "parent_id": "p058",
+      "children_ids": []
+    },
+    "p117": {
+      "id": "p117",
+      "name": "मोहन",
+      "parent_id": "p059",
+      "children_ids": []
+    },
+    "p118": {
+      "id": "p118",
+      "name": "बलराम",
+      "parent_id": "p060",
+      "children_ids": []
+    },
+    "p119": {
+      "id": "p119",
+      "name": "सुर्य",
+      "parent_id": "p061",
+      "children_ids": []
+    },
+    "p120": {
+      "id": "p120",
+      "name": "सन्तोष",
+      "parent_id": "p061",
+      "children_ids": []
+    },
+    "p121": {
+      "id": "p121",
+      "name": "शंकर",
+      "parent_id": "p061",
+      "children_ids": []
+    },
+    "p122": {
+      "id": "p122",
+      "name": "सागर",
+      "parent_id": "p064",
+      "children_ids": []
+    },
+    "p123": {
+      "id": "p123",
+      "name": "समर्थ",
+      "parent_id": "p065",
+      "children_ids": []
+    },
+    "p124": {
+      "id": "p124",
+      "name": "वसन्त",
+      "parent_id": "p067",
+      "children_ids": []
+    },
+    "p125": {
+      "id": "p125",
+      "name": "दिवस हमाल",
+      "parent_id": "p068",
+      "children_ids": []
+    },
+    "p126": {
+      "id": "p126",
+      "name": "सनु",
+      "parent_id": "p069",
+      "children_ids": [
+        "p150"
+      ]
+    },
+    "p127": {
+      "id": "p127",
+      "name": "शिशिर",
+      "parent_id": "p070",
+      "children_ids": []
+    },
+    "p128": {
+      "id": "p128",
+      "name": "रोनक",
+      "parent_id": "p071",
+      "children_ids": []
+    },
+    "p129": {
+      "id": "p129",
+      "name": "मनिस",
+      "parent_id": "p082",
+      "children_ids": []
+    },
+    "p130": {
+      "id": "p130",
+      "name": "विश्वास",
+      "parent_id": "p084",
+      "children_ids": []
+    },
+    "p131": {
+      "id": "p131",
+      "name": "नविन",
+      "parent_id": "p085",
+      "children_ids": []
+    },
+    "p132": {
+      "id": "p132",
+      "name": "कान्छो",
+      "parent_id": "p095",
+      "children_ids": []
+    },
+    "p133": {
+      "id": "p133",
+      "name": "संन्जोग",
+      "parent_id": "p097",
+      "children_ids": [
+        "p151"
+      ]
+    },
+    "p134": {
+      "id": "p134",
+      "name": "प्रदिप",
+      "parent_id": "p097",
+      "children_ids": []
+    },
+    "p135": {
+      "id": "p135",
+      "name": "प्रशान्त",
+      "parent_id": "p098",
+      "children_ids": []
+    },
+    "p136": {
+      "id": "p136",
+      "name": "अरूण",
+      "parent_id": "p099",
+      "children_ids": []
+    },
+    "p137": {
+      "id": "p137",
+      "name": "किरण",
+      "parent_id": "p099",
+      "children_ids": []
+    },
+    "p138": {
+      "id": "p138",
+      "name": "सुमन",
+      "parent_id": "p100",
+      "children_ids": [
+        "p152"
+      ]
+    },
+    "p139": {
+      "id": "p139",
+      "name": "देवराज",
+      "parent_id": "p100",
+      "children_ids": []
+    },
+    "p140": {
+      "id": "p140",
+      "name": "सुदिप",
+      "parent_id": "p101",
+      "children_ids": []
+    },
+    "p141": {
+      "id": "p141",
+      "name": "प्रकाश",
+      "parent_id": "p102",
+      "children_ids": []
+    },
+    "p142": {
+      "id": "p142",
+      "name": "प्रदिप",
+      "parent_id": "p102",
+      "children_ids": []
+    },
+    "p143": {
+      "id": "p143",
+      "name": "दिपेन्द्र",
+      "parent_id": "p104",
+      "children_ids": []
+    },
+    "p144": {
+      "id": "p144",
+      "name": "सन्जोग",
+      "parent_id": "p105",
+      "children_ids": []
+    },
+    "p145": {
+      "id": "p145",
+      "name": "सफल",
+      "parent_id": "p109",
+      "children_ids": []
+    },
+    "p146": {
+      "id": "p146",
+      "name": "सृजीत",
+      "parent_id": "p110",
+      "children_ids": []
+    },
+    "p147": {
+      "id": "p147",
+      "name": "सोसील",
+      "parent_id": "p110",
+      "children_ids": []
+    },
+    "p148": {
+      "id": "p148",
+      "name": "उत्सव",
+      "parent_id": "p111",
+      "children_ids": []
+    },
+    "p149": {
+      "id": "p149",
+      "name": "उज्वल",
+      "parent_id": "p111",
+      "children_ids": []
+    },
+    "p150": {
+      "id": "p150",
+      "name": "सर्विण",
+      "parent_id": "p126",
+      "children_ids": []
+    },
+    "p151": {
+      "id": "p151",
+      "name": "हार्दिक",
+      "parent_id": "p133",
+      "children_ids": []
+    },
+    "p152": {
+      "id": "p152",
+      "name": "सुयोग",
+      "parent_id": "p138",
+      "children_ids": []
+    }
+  },
+  "seed_extras": {
+    "p116": {
+      "dob_bs": "२०५८/०६/२९",
+      "dob_bs_ascii": "2058/06/29"
+    }
+  }
+}
