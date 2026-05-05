@@ -3,40 +3,106 @@
    Parchment aesthetic, refined: cleaner spacing, smoother motion.
    ============================================================ */
 
-:root {
-  /* Palette */
+/* ---------- Theme: Parchment (default) ---------- */
+:root,
+[data-theme='parchment'] {
   --paper:        #f7f0e1;
   --paper-deep:   #ebe0c8;
   --paper-soft:   #fbf6e9;
   --ink:          #2a1a0d;
-  --ink-soft:     #6d553e;
-  --ink-faint:    #a48b6e;
+  --ink-soft:     #5a4530;
+  --ink-faint:    #8a7156;
   --gold:         #b8821b;
   --gold-soft:    rgba(184, 130, 27, 0.18);
   --saffron:      #c4602a;
-  --saffron-soft: rgba(196, 96, 42, 0.14);
+  --saffron-soft: rgba(196, 96, 42, 0.16);
   --crimson:      #8a2018;
-  --crimson-soft: rgba(138, 32, 24, 0.10);
-  --rule:         #cdb98e;
-  --rule-soft:    rgba(205, 185, 142, 0.45);
+  --crimson-soft: rgba(138, 32, 24, 0.12);
+  --rule:         #b59f72;
+  --rule-soft:    rgba(181, 159, 114, 0.55);
+  --line:         #8a7156;        /* connector line */
+  --line-strong:  #6a5236;
   --node-bg:      #fcf7ea;
-  --node-border:  #c8a96a;
+  --node-border:  #b59569;
 
-  /* Shadow scale */
-  --sh-1: 0 1px 0 rgba(120, 90, 40, 0.06), 0 4px 14px -6px rgba(120, 90, 40, 0.18);
-  --sh-2: 0 1px 0 rgba(120, 90, 40, 0.10), 0 12px 28px -10px rgba(120, 90, 40, 0.32);
-  --sh-3: 0 2px 0 rgba(120, 90, 40, 0.12), 0 22px 50px -16px rgba(120, 90, 40, 0.45);
+  --grain-1: rgba(60, 40, 20, 0.06);
+  --grain-2: rgba(60, 40, 20, 0.04);
+  --bg-tint-1: rgba(196, 96, 42, 0.07);
+  --bg-tint-2: rgba(138, 32, 24, 0.05);
+  --bg-tint-3: rgba(184, 130, 27, 0.07);
 
-  /* Motion */
+  --sh-1: 0 1px 0 rgba(120, 90, 40, 0.06), 0 4px 14px -6px rgba(120, 90, 40, 0.20);
+  --sh-2: 0 1px 0 rgba(120, 90, 40, 0.10), 0 12px 28px -10px rgba(120, 90, 40, 0.34);
+  --sh-3: 0 2px 0 rgba(120, 90, 40, 0.12), 0 22px 50px -16px rgba(120, 90, 40, 0.48);
+
   --ease-out:   cubic-bezier(0.22, 0.78, 0.22, 1);
   --ease-spring: cubic-bezier(0.34, 1.32, 0.56, 1);
   --dur-fast:   0.18s;
   --dur-mid:    0.32s;
   --dur-slow:   0.6s;
 
-  /* Radii */
   --rad-sm: 3px;
   --rad-md: 6px;
+}
+
+/* ---------- Theme: Midnight (dark, ink-on-indigo) ---------- */
+[data-theme='midnight'] {
+  --paper:        #15171f;
+  --paper-deep:   #0e1018;
+  --paper-soft:   #1c1f2a;
+  --ink:          #f3eede;
+  --ink-soft:     #c4bda6;
+  --ink-faint:    #8d8674;
+  --gold:         #e0b85a;
+  --gold-soft:    rgba(224, 184, 90, 0.18);
+  --saffron:      #f08b56;
+  --saffron-soft: rgba(240, 139, 86, 0.20);
+  --crimson:      #e26a5d;
+  --crimson-soft: rgba(226, 106, 93, 0.18);
+  --rule:         #3a3f4f;
+  --rule-soft:    rgba(58, 63, 79, 0.65);
+  --line:         #6d7188;
+  --line-strong:  #9aa0bb;
+  --node-bg:      #1c1f2a;
+  --node-border:  #4a5066;
+
+  --grain-1: rgba(255, 240, 200, 0.04);
+  --grain-2: rgba(255, 240, 200, 0.025);
+  --bg-tint-1: rgba(240, 139, 86, 0.10);
+  --bg-tint-2: rgba(226, 106, 93, 0.08);
+  --bg-tint-3: rgba(224, 184, 90, 0.10);
+
+  --sh-1: 0 1px 0 rgba(0, 0, 0, 0.40), 0 4px 14px -6px rgba(0, 0, 0, 0.55);
+  --sh-2: 0 1px 0 rgba(0, 0, 0, 0.50), 0 12px 28px -10px rgba(0, 0, 0, 0.70);
+  --sh-3: 0 2px 0 rgba(0, 0, 0, 0.55), 0 22px 50px -16px rgba(0, 0, 0, 0.85);
+}
+
+/* ---------- Theme: Sepia (warm, deeper paper) ---------- */
+[data-theme='sepia'] {
+  --paper:        #efe1c0;
+  --paper-deep:   #e0cfa2;
+  --paper-soft:   #f5e9c9;
+  --ink:          #2b1a08;
+  --ink-soft:     #4d3413;
+  --ink-faint:    #7a5b30;
+  --gold:         #a06318;
+  --gold-soft:    rgba(160, 99, 24, 0.20);
+  --saffron:      #b04415;
+  --saffron-soft: rgba(176, 68, 21, 0.16);
+  --crimson:      #6e1410;
+  --crimson-soft: rgba(110, 20, 16, 0.14);
+  --rule:         #a3884e;
+  --rule-soft:    rgba(163, 136, 78, 0.55);
+  --line:         #7a5b30;
+  --line-strong:  #4d3413;
+  --node-bg:      #f5e9c9;
+  --node-border:  #a3884e;
+
+  --grain-1: rgba(60, 30, 5, 0.08);
+  --grain-2: rgba(60, 30, 5, 0.05);
+  --bg-tint-1: rgba(176, 68, 21, 0.08);
+  --bg-tint-2: rgba(110, 20, 16, 0.06);
+  --bg-tint-3: rgba(160, 99, 24, 0.08);
 }
 
 * { box-sizing: border-box; }
@@ -47,14 +113,14 @@ html, body {
   overflow: hidden;
   background: var(--paper);
   color: var(--ink);
-  font-family: 'Crimson Pro', 'Noto Serif Devanagari', 'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif;
-  font-size: 16px;
+  font-family: 'Lora', 'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif;
+  font-size: 17px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  transition: background 0.45s var(--ease-out), color 0.45s var(--ease-out);
 }
 
-/* Subtle paper grain */
 body::before {
   content: '';
   position: fixed;
@@ -62,9 +128,9 @@ body::before {
   pointer-events: none;
   z-index: 0;
   background:
-    radial-gradient(1200px 700px at 15% 10%, rgba(196, 96, 42, 0.07), transparent 60%),
-    radial-gradient(1000px 600px at 85% 90%, rgba(138, 32, 24, 0.05), transparent 60%),
-    radial-gradient(circle at 50% 0%, rgba(184, 130, 27, 0.07), transparent 70%);
+    radial-gradient(1200px 700px at 15% 10%, var(--bg-tint-1), transparent 60%),
+    radial-gradient(1000px 600px at 85% 90%, var(--bg-tint-2), transparent 60%),
+    radial-gradient(circle at 50% 0%, var(--bg-tint-3), transparent 70%);
 }
 body::after {
   content: '';
@@ -74,58 +140,61 @@ body::after {
   z-index: 0;
   opacity: 0.32;
   background-image:
-    radial-gradient(rgba(60, 40, 20, 0.06) 1px, transparent 1px),
-    radial-gradient(rgba(60, 40, 20, 0.04) 1px, transparent 1px);
+    radial-gradient(var(--grain-1) 1px, transparent 1px),
+    radial-gradient(var(--grain-2) 1px, transparent 1px);
   background-size: 3px 3px, 7px 7px;
   background-position: 0 0, 1px 2px;
 }
 
-.deva    { font-family: 'Noto Serif Devanagari', 'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif; font-feature-settings: 'kern' 1; }
-.display { font-family: 'Cormorant Garamond', 'Noto Serif Devanagari', serif; letter-spacing: 0.01em; }
-.latin   { font-family: 'Cormorant Garamond', 'Crimson Pro', serif; }
+.deva    { font-family: 'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif; font-feature-settings: 'kern' 1; }
+.display { font-family: 'Lora', 'Noto Serif Devanagari', serif; letter-spacing: 0.01em; font-weight: 600; }
+.latin   { font-family: 'Lora', serif; }
+.ui      { font-family: 'Inter', 'Lora', system-ui, sans-serif; letter-spacing: 0.01em; }
 
 /* ============================================================
-   Header
+   Header (always visible, centered)
    ============================================================ */
 .topbar {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 30;
-  padding: 18px 28px 14px;
+  padding: 16px 28px 14px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  gap: 8px;
   background: linear-gradient(
     to bottom,
-    rgba(247, 240, 225, 0.97),
-    rgba(247, 240, 225, 0.82) 70%,
-    rgba(247, 240, 225, 0)
+    color-mix(in srgb, var(--paper) 96%, transparent),
+    color-mix(in srgb, var(--paper) 78%, transparent) 75%,
+    transparent
   );
-  backdrop-filter: blur(8px);
-  transition: opacity var(--dur-mid) var(--ease-out),
-              transform var(--dur-mid) var(--ease-out);
-}
-.topbar.hidden {
-  opacity: 0;
-  transform: translateY(-14px);
-  pointer-events: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--rule-soft);
 }
 
-.title-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; }
-.title-block { flex: 1; min-width: 0; }
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+}
+.title-block { text-align: center; max-width: 1100px; }
 .eyebrow {
   font-size: 11px;
   letter-spacing: 0.32em;
   text-transform: uppercase;
   color: var(--ink-soft);
-  margin-bottom: 6px;
-  font-family: 'Crimson Pro', 'Cormorant Garamond', serif;
+  margin-bottom: 5px;
+  font-family: 'Inter', 'Lora', sans-serif;
 }
 .title {
-  font-size: clamp(20px, 2.4vw, 30px);
-  line-height: 1.15;
+  font-size: clamp(22px, 2.6vw, 32px);
+  line-height: 1.18;
   color: var(--ink);
-  font-weight: 500;
+  font-weight: 600;
   margin: 0;
   letter-spacing: 0.005em;
 }
@@ -149,12 +218,14 @@ body::after {
   flex-wrap: wrap;
   gap: 10px;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 .ctrl-group {
   display: flex;
   gap: 0;
   align-items: center;
-  background: rgba(252, 247, 234, 0.92);
+  background: color-mix(in srgb, var(--paper-soft) 88%, transparent);
   border: 1px solid var(--rule);
   border-radius: var(--rad-sm);
   padding: 2px;
@@ -164,9 +235,11 @@ body::after {
   border: 0;
   background: transparent;
   cursor: pointer;
-  padding: 6px 13px;
+  padding: 7px 14px;
   font: inherit;
-  font-size: 13px;
+  font-family: 'Inter', 'Lora', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
   color: var(--ink);
   border-radius: 2px;
   transition: background var(--dur-fast) var(--ease-out),
@@ -185,12 +258,13 @@ body::after {
   display: flex;
   align-items: center;
   gap: 8px;
-  background: rgba(252, 247, 234, 0.92);
+  background: color-mix(in srgb, var(--paper-soft) 88%, transparent);
   border: 1px solid var(--rule);
   border-radius: var(--rad-sm);
-  padding: 7px 11px;
-  min-width: 220px;
+  padding: 8px 12px;
+  min-width: 240px;
   box-shadow: var(--sh-1);
+  font-size: 14px;
   transition: border-color var(--dur-fast) var(--ease-out),
               box-shadow var(--dur-fast) var(--ease-out);
 }
@@ -236,11 +310,11 @@ body::after {
   display: flex;
   align-items: center;
   gap: 6px;
-  background: rgba(252, 247, 234, 0.92);
+  background: color-mix(in srgb, var(--paper-soft) 88%, transparent);
   border: 1px solid var(--rule);
   border-radius: var(--rad-sm);
-  padding: 6px 9px;
-  font-size: 13px;
+  padding: 7px 10px;
+  font-size: 14px;
   box-shadow: var(--sh-1);
 }
 .date-conv label {
@@ -252,6 +326,46 @@ body::after {
 .date-conv input { border: 0; background: transparent; outline: 0; font: inherit; width: 88px; color: var(--ink); }
 .date-conv input::placeholder { color: var(--ink-faint); }
 .date-conv .arrow { color: var(--gold); font-size: 14px; }
+
+/* Theme picker — native <select> styled to match controls */
+.theme-picker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: color-mix(in srgb, var(--paper-soft) 88%, transparent);
+  border: 1px solid var(--rule);
+  border-radius: var(--rad-sm);
+  padding: 6px 10px;
+  font-size: 14px;
+  box-shadow: var(--sh-1);
+}
+.theme-picker label {
+  color: var(--ink-soft);
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.theme-picker select {
+  border: 0;
+  background: transparent;
+  outline: 0;
+  font: inherit;
+  font-family: 'Inter', 'Lora', sans-serif;
+  color: var(--ink);
+  cursor: pointer;
+  padding: 2px 4px 2px 0;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--ink-soft) 50%),
+                    linear-gradient(135deg, var(--ink-soft) 50%, transparent 50%);
+  background-position: calc(100% - 8px) 50%, calc(100% - 4px) 50%;
+  background-size: 4px 4px, 4px 4px;
+  background-repeat: no-repeat;
+  padding-right: 16px;
+}
+.theme-picker select option { background: var(--paper); color: var(--ink); }
 
 /* ============================================================
    Canvas + stage
@@ -280,12 +394,17 @@ body::after {
   background: var(--node-bg);
   border: 1px solid var(--node-border);
   border-radius: var(--rad-sm);
-  padding: 7px 12px;
+  padding: 10px 14px;
   text-align: center;
   cursor: pointer;
   user-select: none;
   box-shadow: var(--sh-1);
-  line-height: 1.15;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
   transition:
     transform var(--dur-fast) var(--ease-spring),
     background var(--dur-fast) var(--ease-out),
@@ -302,9 +421,9 @@ body::after {
   pointer-events: none;
   transition: border-color var(--dur-fast) var(--ease-out);
 }
-.node .name    { font-family: 'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif; font-size: 14px; color: var(--ink); position: relative; }
-.node .name-en { font-family: 'Cormorant Garamond', 'Crimson Pro', serif; font-size: 14px; font-style: italic; color: var(--ink); position: relative; }
-.node .meta    { font-size: 10px; color: var(--ink-soft); margin-top: 2px; letter-spacing: 0.04em; position: relative; }
+.node .name    { font-family: 'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif; font-size: 17px; font-weight: 500; color: var(--ink); position: relative; }
+.node .name-en { font-family: 'Lora', serif; font-size: 16px; font-weight: 500; color: var(--ink); position: relative; }
+.node .meta    { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--ink-soft); margin-top: 2px; letter-spacing: 0.06em; text-transform: uppercase; position: relative; }
 
 /* Hover — lift + halo */
 .node:hover {
@@ -322,19 +441,21 @@ body::after {
 
 /* Variants */
 .node.root {
-  background: linear-gradient(to bottom, #fff8e6, #f4e6c1);
+  background: linear-gradient(to bottom,
+    color-mix(in srgb, var(--gold) 14%, var(--paper-soft)),
+    color-mix(in srgb, var(--gold) 28%, var(--paper-soft)));
   border-color: var(--gold);
-  border-width: 1.5px;
+  border-width: 1.6px;
 }
-.node.root .name { font-weight: 500; font-size: 15px; }
+.node.root .name { font-weight: 600; font-size: 18px; }
 
 .node.selected {
   border-color: var(--crimson);
-  border-width: 1.5px;
-  background: #fdf2eb;
+  border-width: 1.8px;
+  background: color-mix(in srgb, var(--crimson) 10%, var(--paper-soft));
   box-shadow:
     0 0 0 3px var(--crimson-soft),
-    0 16px 32px -10px rgba(138, 32, 24, 0.4);
+    0 16px 32px -10px color-mix(in srgb, var(--crimson) 40%, transparent);
   animation: node-pop 0.5s var(--ease-spring);
 }
 @keyframes node-pop {
@@ -351,7 +472,9 @@ body::after {
 
 .node.lineage {
   border-color: var(--crimson);
-  background: linear-gradient(to bottom, #fbeee6, #f4ddc9);
+  background: linear-gradient(to bottom,
+    color-mix(in srgb, var(--crimson) 6%, var(--paper-soft)),
+    color-mix(in srgb, var(--gold) 14%, var(--paper-deep)));
 }
 
 /* When a focus is active, non-scope nodes vanish (not just dim) so the
@@ -377,22 +500,23 @@ body::after {
 }
 
 /* ============================================================
-   Connectors (SVG curves)
+   Connectors (SVG curves) — bolder, easier to follow
    ============================================================ */
 .links { position: absolute; pointer-events: none; overflow: visible; }
 .links path {
   fill: none;
-  stroke: var(--ink-faint);
-  stroke-width: 1;
+  stroke: var(--line);
+  stroke-width: 1.8;
   stroke-linecap: round;
+  stroke-linejoin: round;
   transition: stroke var(--dur-mid) var(--ease-out),
               stroke-width var(--dur-mid) var(--ease-out),
               opacity var(--dur-mid) var(--ease-out);
 }
 .links path.active {
   stroke: var(--crimson);
-  stroke-width: 1.8;
-  filter: drop-shadow(0 0 6px rgba(138, 32, 24, 0.30));
+  stroke-width: 2.6;
+  filter: drop-shadow(0 0 7px color-mix(in srgb, var(--crimson) 40%, transparent));
 }
 /* In focus mode any path touching a hidden node disappears entirely so the
    visible cluster has clean, uncluttered connectors. */
@@ -428,10 +552,10 @@ body::after {
   border-radius: 2px;
   pointer-events: none;
 }
-.tt-title    { font-family: 'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif; font-size: 18px; color: var(--ink); margin-bottom: 2px; position: relative; }
-.tt-title-en { font-family: 'Cormorant Garamond', 'Crimson Pro', serif; font-style: italic; font-size: 14px; color: var(--ink-soft); margin-bottom: 8px; position: relative; }
-.tt-row { display: flex; gap: 8px; font-size: 13px; margin-top: 3px; position: relative; line-height: 1.35; }
-.tt-row .lbl { color: var(--ink-soft); font-style: italic; min-width: 62px; flex-shrink: 0; }
+.tt-title    { font-family: 'Noto Serif Devanagari', 'Tiro Devanagari Hindi', serif; font-size: 20px; font-weight: 600; color: var(--ink); margin-bottom: 2px; position: relative; }
+.tt-title-en { font-family: 'Lora', serif; font-style: italic; font-size: 15px; color: var(--ink-soft); margin-bottom: 8px; position: relative; }
+.tt-row { display: flex; gap: 8px; font-size: 14px; margin-top: 3px; position: relative; line-height: 1.4; }
+.tt-row .lbl { font-family: 'Inter', sans-serif; color: var(--ink-soft); font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; min-width: 70px; flex-shrink: 0; padding-top: 1px; }
 .tt-row .val { color: var(--ink); flex: 1; }
 .tt-divider {
   height: 1px;
@@ -539,10 +663,12 @@ body::after {
 .btn {
   border: 1px solid var(--rule);
   background: var(--paper);
-  padding: 8px 14px;
+  padding: 9px 15px;
   cursor: pointer;
   font: inherit;
-  font-size: 13px;
+  font-family: 'Inter', 'Lora', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
   color: var(--ink);
   border-radius: var(--rad-sm);
   transition: all var(--dur-fast) var(--ease-out);
@@ -638,14 +764,15 @@ body::after {
   position: fixed;
   bottom: 22px; left: 22px;
   z-index: 20;
-  font-size: 11px;
+  font-family: 'Inter', 'Lora', sans-serif;
+  font-size: 12px;
   color: var(--ink-soft);
-  letter-spacing: 0.06em;
-  background: rgba(247, 240, 225, 0.92);
-  padding: 9px 14px;
+  letter-spacing: 0.04em;
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  padding: 10px 14px;
   border: 1px solid var(--rule);
   border-radius: var(--rad-sm);
-  max-width: 320px;
+  max-width: 340px;
   line-height: 1.5;
   box-shadow: var(--sh-1);
 }

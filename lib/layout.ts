@@ -1,9 +1,9 @@
 import type { Layout, Person } from './types';
 
-export const NODE_W = 132;
-export const NODE_H = 56;
-export const GAP_X = 18;
-export const GAP_Y = 90;
+export const NODE_W = 168;
+export const NODE_H = 72;
+export const GAP_X = 22;
+export const GAP_Y = 100;
 
 /**
  * Compute a Walker-style tidy tree layout.

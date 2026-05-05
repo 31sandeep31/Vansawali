@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import type { FocusScope, Lang, ViewMode } from '@/lib/types';
+import type { FocusScope, Lang, Theme, ViewMode } from '@/lib/types';
 import { I18N } from '@/lib/i18n';
 import { adToBs, bsToAd, toEnDigits, toNeDigits } from '@/lib/bsAd';
 import { transliterate } from '@/lib/transliterate';
@@ -19,34 +19,32 @@ interface Props {
   lang: Lang;
   view: ViewMode;
   scope: FocusScope;
+  theme: Theme;
   hasSelected: boolean;
   editMode: boolean;
-  hidden: boolean;
   onViewChange: (v: ViewMode) => void;
   onScopeChange: (s: FocusScope) => void;
   onLangChange: (l: Lang) => void;
+  onThemeChange: (t: Theme) => void;
   onEditModeToggle: () => void;
   onExport: () => void;
   onSearchPick: (id: string) => void;
-  onMouseEnter: () => void;
-  onMouseLeave: () => void;
 }
 
 export default function Header({
   lang,
   view,
   scope,
+  theme,
   hasSelected,
   editMode,
-  hidden,
   onViewChange,
   onScopeChange,
   onLangChange,
+  onThemeChange,
   onEditModeToggle,
   onExport,
   onSearchPick,
-  onMouseEnter,
-  onMouseLeave,
 }: Props) {
   const t = I18N[lang];
 
@@ -139,14 +137,10 @@ export default function Header({
   }, []);
 
   return (
-    <div
-      className={`topbar${hidden ? ' hidden' : ''}`}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-    >
+    <div className="topbar">
       <div className="title-row">
         <div className="title-block">
-          <div className="eyebrow latin">{t.eyebrow}</div>
+          <div className="eyebrow ui">{t.eyebrow}</div>
           <h1 className="title deva">{t.title}</h1>
         </div>
       </div>
@@ -234,6 +228,19 @@ export default function Header({
             className={`ctrl-btn${lang === 'en' ? ' active' : ''}`}
             onClick={() => onLangChange('en')}
           >{t.en_lang}</button>
+        </div>
+
+        <div className="theme-picker">
+          <label htmlFor="theme-select">{t.theme}</label>
+          <select
+            id="theme-select"
+            value={theme}
+            onChange={(e) => onThemeChange(e.target.value as Theme)}
+          >
+            <option value="parchment">{t.theme_parchment}</option>
+            <option value="midnight">{t.theme_midnight}</option>
+            <option value="sepia">{t.theme_sepia}</option>
+          </select>
         </div>
 
         <div className="ctrl-group">

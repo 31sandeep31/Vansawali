@@ -1,8 +1,9 @@
-import type { EditsMap, Lang } from './types';
+import type { EditsMap, Lang, Theme } from './types';
 import { DATA } from './data';
 
 const STORAGE_KEY = 'vansavali_edits_v1';
 const LANG_KEY = 'vansavali_lang';
+const THEME_KEY = 'vansavali_theme';
 
 /** Load saved edits from localStorage, then merge in any seed extras the user hasn't touched. */
 export function loadEdits(): EditsMap {
@@ -37,4 +38,15 @@ export function loadLang(fallback: Lang = 'ne'): Lang {
 export function saveLang(lang: Lang): void {
   if (typeof window === 'undefined') return;
   window.localStorage.setItem(LANG_KEY, lang);
+}
+
+export function loadTheme(fallback: Theme = 'parchment'): Theme {
+  if (typeof window === 'undefined') return fallback;
+  const v = window.localStorage.getItem(THEME_KEY);
+  return v === 'parchment' || v === 'midnight' || v === 'sepia' ? v : fallback;
+}
+
+export function saveTheme(theme: Theme): void {
+  if (typeof window === 'undefined') return;
+  window.localStorage.setItem(THEME_KEY, theme);
 }

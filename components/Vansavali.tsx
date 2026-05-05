@@ -7,12 +7,12 @@ import Tooltip from './Tooltip';
 import SidePanel from './SidePanel';
 import Splash from './Splash';
 import BookView from './BookView';
-import type { EditsMap, FocusScope, Lang, PersonEdit, ViewMode } from '@/lib/types';
+import type { EditsMap, FocusScope, Lang, PersonEdit, Theme, ViewMode } from '@/lib/types';
 import { I18N } from '@/lib/i18n';
 import { DATA, PEOPLE, ROOT_ID } from '@/lib/data';
 import { ancestorsOf, descendantsOf, focusSetOf } from '@/lib/layout';
 import { resolvePerson } from '@/lib/resolve';
-import { loadEdits, loadLang, saveEdits, saveLang } from '@/lib/storage';
+import { loadEdits, loadLang, loadTheme, saveEdits, saveLang, saveTheme } from '@/lib/storage';
 
 type SidePanelMode = 'edit' | 'lineage';
 
@@ -23,6 +23,7 @@ export default function Vansavali() {
   /* ------------------ State ------------------ */
   const [edits, setEdits] = useState<EditsMap>({});
   const [lang, setLang] = useState<Lang>('ne');
+  const [theme, setTheme] = useState<Theme>('parchment');
   const [view, setView] = useState<ViewMode>('top-down');
   const [scope, setScope] = useState<FocusScope>('all');
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -38,11 +39,6 @@ export default function Vansavali() {
   const [hoverId, setHoverId] = useState<string | null>(null);
   const [hoverXY, setHoverXY] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
 
-  // Header auto-hide
-  const [headerHidden, setHeaderHidden] = useState(false);
-  const headerHover = useRef(false);
-  const idleTimer = useRef<number | undefined>(undefined);
-
   // Camera control (TreeCanvas exposes imperative methods)
   const canvasRef = useRef<TreeCanvasHandle>(null);
 
@@ -50,7 +46,17 @@ export default function Vansavali() {
   useEffect(() => {
     setEdits(loadEdits());
     setLang(loadLang('ne'));
+    const t = loadTheme('parchment');
+    setTheme(t);
+    if (typeof document !== 'undefined') document.documentElement.setAttribute('data-theme', t);
   }, []);
+
+  /* ------------------ Apply theme to <html data-theme> ------------------ */
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      document.documentElement.setAttribute('data-theme', theme);
+    }
+  }, [theme]);
 
   /* ------------------ Persistence ------------------ */
   const persistEdits = useCallback((next: EditsMap) => {
@@ -114,6 +120,11 @@ export default function Vansavali() {
     setLang(l);
     saveLang(l);
     if (typeof document !== 'undefined') document.documentElement.lang = l;
+  };
+
+  const onThemeChange = (t: Theme) => {
+    setTheme(t);
+    saveTheme(t);
   };
 
   const onSearchPick = (id: string) => {
@@ -222,28 +233,13 @@ export default function Vansavali() {
     }, 30);
   };
 
-  /* ------------------ Header auto-hide ------------------ */
-
-  // Hide after the cursor lingers on the canvas; show again at the top edge.
-  const onCanvasMove = useCallback(() => {
-    if (headerHover.current) return;
-    if (idleTimer.current !== undefined) window.clearTimeout(idleTimer.current);
-    idleTimer.current = window.setTimeout(() => {
-      if (!headerHover.current) setHeaderHidden(true);
-    }, 800);
-  }, []);
-
+  /* ------------------ Canvas + global keys ------------------ */
+  const onCanvasMove = useCallback(() => { /* header is always visible now */ }, []);
   const onCanvasMouseDown = useCallback(() => {
     setHoverId(null); // hide tooltip on drag start
   }, []);
 
   useEffect(() => {
-    const onMove = (e: MouseEvent) => {
-      if (e.clientY < 6) {
-        setHeaderHidden(false);
-        if (idleTimer.current !== undefined) window.clearTimeout(idleTimer.current);
-      }
-    };
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
         setPanelOpen(false);
@@ -251,21 +247,8 @@ export default function Vansavali() {
         setHoverId(null);
       }
     };
-    window.addEventListener('mousemove', onMove);
     window.addEventListener('keydown', onKey);
-    return () => {
-      window.removeEventListener('mousemove', onMove);
-      window.removeEventListener('keydown', onKey);
-    };
-  }, []);
-
-  const onHeaderEnter = useCallback(() => {
-    headerHover.current = true;
-    if (idleTimer.current !== undefined) window.clearTimeout(idleTimer.current);
-    setHeaderHidden(false);
-  }, []);
-  const onHeaderLeave = useCallback(() => {
-    headerHover.current = false;
+    return () => window.removeEventListener('keydown', onKey);
   }, []);
 
   const t = I18N[lang];
@@ -279,17 +262,16 @@ export default function Vansavali() {
         lang={lang}
         view={view}
         scope={scope}
+        theme={theme}
         hasSelected={selectedId !== null}
         editMode={editMode}
-        hidden={headerHidden}
         onViewChange={onViewChange}
         onScopeChange={onScopeChange}
         onLangChange={onLangChange}
+        onThemeChange={onThemeChange}
         onEditModeToggle={() => setEditMode((m) => !m)}
         onExport={onExport}
         onSearchPick={onSearchPick}
-        onMouseEnter={onHeaderEnter}
-        onMouseLeave={onHeaderLeave}
       />
 
       {view === 'book' ? (

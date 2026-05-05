@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdf5e0"/>
+      <stop offset="1" stop-color="#ebd9af"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c4602a"/>
+      <stop offset="1" stop-color="#8a2018"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="11" fill="url(#bg)"/>
+  <rect x="3.5" y="3.5" width="57" height="57" rx="9"
+        fill="none" stroke="#b8821b" stroke-width="1" opacity="0.55"/>
+  <text x="32" y="48" text-anchor="middle"
+        font-family="'Noto Serif Devanagari','Tiro Devanagari Hindi',serif"
+        font-size="44" font-weight="500" fill="url(#ink)">ॐ</text>
+</svg>

@@ -54,6 +54,11 @@ export type ViewMode = 'top-down' | 'bottom-up' | 'book';
 /** Which slice of the tree is shown (and which is dimmed). */
 export type FocusScope = 'all' | 'focus' | 'lineage';
 
+/** Visual theme — applied via `data-theme` on <html>. */
+export type Theme = 'parchment' | 'midnight' | 'sepia';
+
+export const THEMES: readonly Theme[] = ['parchment', 'midnight', 'sepia'] as const;
+
 /** Result of the tree layout pass. */
 export interface Layout {
   pos: Record<string, { x: number; y: number; depth: number; leaf?: boolean }>;

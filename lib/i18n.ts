@@ -44,6 +44,10 @@ export interface Strings {
   show_all: string;
   no_record: string;
   generation_short: string;
+  theme: string;
+  theme_parchment: string;
+  theme_midnight: string;
+  theme_sepia: string;
 }
 
 export const I18N: Record<Lang, Strings> = {
@@ -91,6 +95,10 @@ export const I18N: Record<Lang, Strings> = {
     show_all: 'सबै देखाउनुहोस्',
     no_record: 'विवरण उल्लेख छैन',
     generation_short: 'पुस्ता',
+    theme: 'विषय',
+    theme_parchment: 'काग़ज',
+    theme_midnight: 'रात्रि',
+    theme_sepia: 'पुरानो',
   },
   en: {
     eyebrow: 'Nepal · Gandaki Pradesh · Syangja · Waling Municipality, Ward 1, Mansangkot',
@@ -136,5 +144,9 @@ export const I18N: Record<Lang, Strings> = {
     show_all: 'Show all',
     no_record: 'No record',
     generation_short: 'Gen.',
+    theme: 'Theme',
+    theme_parchment: 'Parchment',
+    theme_midnight: 'Midnight',
+    theme_sepia: 'Sepia',
   },
 };
